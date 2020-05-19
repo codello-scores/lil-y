@@ -1,16 +1,17 @@
-# My LilyPond Project
+# LilyPond One-Offs
 
-Add the composer, title, and opus of the piece here.
+LilyPond scores and parts that do not warrant their own project.
+
+Note that none of the scores are anywhere near production-ready. This repository exists mainly for achival purposes.
 
 ## Engraving Scores
 
 ```shell
-make all         # Compiles all parts and the full score.
-make <score>.pdf # Engraves the full score.
-make <part>.pdf  # Engraves a <part>
+make all        # Compiles all scores and parts.
+make <file>.pdf # Engraves a single file.
 ```
 
-It may be helpful to list the available parts here.
+See the `/scores` folder for a list of available pieces.
 
 ## Installing Fonts
 
