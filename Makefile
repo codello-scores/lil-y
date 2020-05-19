@@ -3,7 +3,7 @@ LILY_OPTIONS=-ddelete-intermediate-files -dno-point-and-click
 
 .SUFFIXES: .ly .ily .pdf .midi
 
-LY_FILES = $(wildcard scores/*.ly)
+LY_FILES = $(shell find scores/ -type f -name '*.ly')
 PDF_FILES = $(LY_FILES:scores/%.ly=build/%.pdf)
 
 .PHONY: all
