@@ -1,7 +1,7 @@
 \version "2.20.0"
 
 \include "pdq/pdq.ily"
-\include "music/pärt-cantus.ily"
+\include "music/part-cantus.ily"
 
 \header {
   title = "Cantus in Memoriam of Benjamin Britten"
