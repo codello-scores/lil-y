@@ -2,7 +2,7 @@
 
 
 \include "pdq/pdq.ily"
-\include "music/no-no-che-non-sei-capace.ly"
+\include "music/no-no-che-non-sei-capace.ily"
 
 \header {
   title = "No, no, che non sei capace"
