@@ -10,7 +10,7 @@ jobs:
         with:
           submodules: true
       - name: Compile Files
-        uses: docker://codello/lilypond:shell
+        uses: docker://codello/lilypond
         with:
           entrypoint: make
           args: ci
