@@ -88,7 +88,12 @@ GuitarNotesTwo = \relative c {
   e, gis' d' gis, e' gis, d' gis, e, gis' d' gis, e' gis, d' gis, |
   a, a' c a e' a, c a a, a' c a e' a, c a |
   d, a' c a fis' a, c a d, g b g g' g, b g |
-  d a' d a fis' a, d a d,\< g bes g g'\sf g, bes g |
+  d a' d a fis' a, d a
+  \set TabStaff.minimumFret = #3
+  \set TabStaff.restrainOpenStrings = ##t
+  d,\< g bes g g'\sf g, bes g |
+  \unset TabStaff.minimumFret
+  \unset TabStaff.restrainOpenStrings
   d a' d a fis' a, d a d, g bes g g' g, bes g |
   d a' d a fis' a, d a d, a' d a fis' a, d a |
   <d, a' d fis>2\fermata r2\fermata
@@ -129,10 +134,16 @@ GuitarNotesThree = \relative c {
   \tuplet 3/2 { d,8 a' c } \tuplet 3/2 { fis c a } \tuplet 3/2 { d, a' c } |
   \tuplet 3/2 { g, g' b } \tuplet 3/2 { g'\pp b, g } \tuplet 3/2 { g, g' b } |
   \tuplet 3/2 { d, a' c } \tuplet 3/2 { fis c a } \tuplet 3/2 { d, a' c } |
+  \set TabStaff.minimumFret = #1
+  \set TabStaff.restrainOpenStrings = ##t
   \tuplet 3/2 { g, g' b } \tuplet 3/2 { g'\< d b } \tuplet 3/2 { g, g' b } |
+  \unset TabStaff.minimumFret
+  \unset TabStaff.restrainOpenStrings
   \tuplet 3/2 { dis,\f a' b } \tuplet 3/2 { fis' b, a } \tuplet 3/2 { dis, a' b } |
   \tuplet 3/2 { e, g b } \tuplet 3/2 { e b g } \tuplet 3/2 { e g b } |
   <a, c' fis>4 r <a c' e>8 <ais cis' e> |
+  \set TabStaff.minimumFret = #1
+  \set TabStaff.restrainOpenStrings = ##t
   \tuplet 3/2 { b8 b' dis } \tuplet 3/2 { fis dis b } \tuplet 3/2 { b, b' e } |
   \tuplet 3/2 { b,8 b' dis } \tuplet 3/2 { fis dis b } \tuplet 3/2 { b, b' e } |
   \tuplet 3/2 { b,8\> b' dis } \tuplet 3/2 { fis dis b } \tuplet 3/2 { b, b' e } |
